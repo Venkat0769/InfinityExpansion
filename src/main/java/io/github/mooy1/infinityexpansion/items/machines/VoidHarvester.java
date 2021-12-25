@@ -27,16 +27,16 @@ import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
  *
  * @author Mooy1
  */
-public final class VoidHarvester extends AbstractMachineBlock implements RecipeDisplayItem {
+public final class SoulHarvester extends AbstractMachineBlock implements RecipeDisplayItem {
 
-    public static final RecipeType TYPE = new RecipeType(InfinityExpansion.createKey("void_harvester"), Machines.VOID_HARVESTER);
+    public static final RecipeType TYPE = new RecipeType(InfinityExpansion.createKey("Soul_harvester"), Machines.SOUL_HARVESTER);
 
     private static final int[] OUTPUT_SLOTS = { 13 };
     private static final int TIME = 1024;
 
     private final int speed;
 
-    public VoidHarvester(ItemGroup category, SlimefunItemStack item, RecipeType type, ItemStack[] recipe, int speed) {
+    public SoulHarvester(ItemGroup category, SlimefunItemStack item, RecipeType type, ItemStack[] recipe, int speed) {
         super(category, item, type, recipe);
         this.speed = speed;
     }
